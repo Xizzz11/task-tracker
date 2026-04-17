@@ -5,6 +5,7 @@ from app.schemas.task import TaskCreate, TaskUpdate, TaskOut
 from app.services.task_service import TaskService
 from app.core.security import get_current_user
 
+
 router = APIRouter()
 
 @router.post("/", response_model=TaskOut)
